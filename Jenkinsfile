@@ -7,7 +7,7 @@ pipeline {
 	        MAJOR = '1'
 	        MINOR = '0'
 	        //Orchestrator Services
-	        UIPATH_ORCH_URL = "https://cloud.uipath.com/"
+	        UIPATH_ORCH_URL = "https://cloud.uipath.com/tqaus"
 	        UIPATH_ORCH_LOGICAL_NAME = "tqaus"
 	        UIPATH_ORCH_TENANT_NAME = "Asit"
 	        UIPATH_ORCH_FOLDER_NAME = "JenkinsPipeline"
@@ -64,7 +64,7 @@ pipeline {
 	                folderName: "${UIPATH_ORCH_FOLDER_NAME}",
 	                environments: 'DEV',
 	                //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
-	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey'), 
+	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'sCkBwofNUBSJhOV2c40Ax5uknrZYbKxReswX5UWYwhfrE'), 
 					traceLevel: 'None',
 					entryPointPaths: 'Main.xaml'
 	
